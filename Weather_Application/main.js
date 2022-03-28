@@ -4,7 +4,7 @@ const app=express()
 app.use(express.json())
 app.use(express.static('public'))
 
-app.post('/weather',(req,res)=>{
+app.get('/',(req,res)=>{
     res.send('Weather application')
 })
 app.listen(3000,()=>{
