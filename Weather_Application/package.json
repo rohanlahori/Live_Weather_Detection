@@ -1,0 +1,19 @@
+{
+    "dependencies": {
+        "lodash": "^4.17.21",
+        "mongoose": "^6.2.8"
+    },
+    "name": "inbuilt_modules",
+    "version": "1.0.0",
+    "main": "async.js",
+    "scripts": {
+        "start": "nodemon main.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
