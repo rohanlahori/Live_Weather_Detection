@@ -2,7 +2,8 @@
     "dependencies": {
         "hbs": "^4.2.0",
         "lodash": "^4.17.21",
-        "mongoose": "^6.2.8"
+        "mongoose": "^6.2.8",
+        "request": "^2.88.2"
     },
     "name": "inbuilt_modules",
     "version": "1.0.0",
