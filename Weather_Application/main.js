@@ -1,12 +1,17 @@
 const express=require('express')
+const hbs=require('hbs')
+const path=require('path')
 const app=express()
-
-app.use(express.json())
-app.use(express.static('public'))
-
+const static_files=path.join(__dirname,'../public')
+const partials_path=path.join(__dirname,'../templates/partials')
+const views_path=path.join(__dirname,'../templates/views')
+app.use(express.static(static_files))
+app.set('viewengine','hbs')
+app.set('views',views_path)
+hbs.registerPartials(partials_path)
 app.get('/',(req,res)=>{
-    res.send('Weather application')
+    res.send('Hey this is main page')
 })
-app.listen(3000,()=>{
-    console.log('User is listening on this port')
+app.listen(4001,()=>{
+    console.log('User Hit')
 })
