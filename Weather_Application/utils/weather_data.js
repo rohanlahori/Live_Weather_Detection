@@ -11,9 +11,11 @@ const weather_data=(address,callback)=>{
             callback('cant fetch data')
         }
         else{
+            // console.log(body)
             callback(undefined,{
-                temprature:body.main.temp,
-                city_name:body.name
+                temprature:body.main.temp-273.15,
+                city_name:body.name,
+                main:body.weather[0].main
             })
         }
     })
