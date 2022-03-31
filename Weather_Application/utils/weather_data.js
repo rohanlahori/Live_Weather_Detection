@@ -6,6 +6,7 @@ const weather_data=(address,callback)=>{
     console.log(url)
     request({url,json:true},(error,{body})=>
     {
+        console.log(body)
         if(error)
         {
             callback('cant fetch data')
@@ -15,7 +16,8 @@ const weather_data=(address,callback)=>{
             callback(undefined,{
                 temprature:body.main.temp-273.15,
                 city_name:body.name,
-                main:body.weather[0].main
+                description:body.weather[0].description
+
             })
         }
     })
