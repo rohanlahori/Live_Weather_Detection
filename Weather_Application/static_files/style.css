@@ -15,6 +15,9 @@ body {
     display: grid;
     place-items: center
 }
+.flex-grow-1{
+    text-align: right;
+}
 #search
 {
     text-align: center;
