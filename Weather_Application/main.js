@@ -29,6 +29,6 @@ app.get('/weather',(req,res)=>{
         }
     })
 })
-app.listen(5005,()=>{
+app.listen(7000,()=>{
     console.log('User Hit')
 })
