@@ -11,6 +11,7 @@ app.use(express.static("static_files"))
 app.set('viewengine','hbs')
 app.set('views',views_path)
 hbs.registerPartials(partials_path)
+const axios=require('axios')
 app.get('/',(req,res)=>{
     console.log("user_hitt")
     return res.sendFile(__dirname + "/static_files/test.html");
@@ -33,6 +34,6 @@ app.get('/weather',(req,res)=>{
         }
     })
 })
-app.listen(5004,()=>{
+app.listen(5005,()=>{
     console.log('User Hit')
 })
