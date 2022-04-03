@@ -6,4 +6,4 @@
 
 ![image](https://user-images.githubusercontent.com/64496391/161419030-75536479-cbe8-4581-875d-553b2bcd4b45.png)
 
-Do contribute on making the fronted of the application look better
+Any contribution in frontend of application would be welcomed.
